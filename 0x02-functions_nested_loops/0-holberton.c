@@ -1,22 +1,24 @@
 #include "holberton.h"
 
 /**
- *main - Entry point
+ * main - Entry point
  *
- *Return: Always 0
+ * Return: Always 0
  *
  */
 
 int main(void)
 {
-	char c;
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 
-	char s[] = "Holberton\n";
-
-	for (int i = 0; i <= 9; i++)
-	{
-		c = s[i];
-		_putchar(c);
-	}
 	return (0);
 }
