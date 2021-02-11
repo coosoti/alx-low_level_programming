@@ -2,16 +2,12 @@
 #include "holberton.h"
 
 /**
+ * main - Entry Point
  *
- * main - Entry pint
+ * Description: print Fizz to replace multiples of 3, Buzz for multiples of 5
+ * and FizzBuzz for multiples of both 3 and 5
  *
- * Descripton: print Fizz for multiples of 3, Buzz for multiples of 5
- * and FizzBuzz for multiples of both 3 and 5 - common interview quiz
- *
- * @void: no params
- *
- * Return: 0
- *
+ * Return: 0 on success
  */
 
 int main(void)
@@ -23,18 +19,21 @@ int main(void)
 
 		if (i % 3 == 0)
 
-			printf("Fizz ");
+			printf("Fizz");
 
 		else if (i % 5 == 0)
 
-			printf("Buzz ");
+			printf("Buzz");
 
 		else if (i % 3 == 0 && i % 5 == 0)
 
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 
 		else
-			printf("%d ", i);
+			printf("%d", i);
+
+		if (i < 100)
+			printf(" ");
 	}
 	printf("\n");
 }
