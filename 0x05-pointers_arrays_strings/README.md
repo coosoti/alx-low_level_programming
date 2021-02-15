@@ -413,3 +413,25 @@ the function puts(S)
 
 
 ```
+
+4. Write a function that prints a string, in reverse, followed by a new line
+
+_My Approach_
+
+_**input**_ A point variable to a str
+_**output**_  The same str in reverse followed by newline.
+
+I am thinking of traversing to the end of the str and use _putchar() to print each character
+from the last.
+
+I am gonna use while loop to get the size of the str and another while loop to print the
+ characters in reverse.
+ 
+* Initialize the last character in the string s[i] == '\0';
+* After reaching the end, print it until you reach i = 0;
+* Let's code.
+```C
+
+
+
+```
