@@ -392,3 +392,24 @@ I will implement it using while loop.
 
 
 ```
+
+3. Write a function that prints a string, followed by a new line, to stdout
+
+_My Approach_
+
+**_input_** The function expects a point variable to a string *str
+**_output_** prints the string with a newline at the end.
+
+I think I may traverse the string and use our own _putchar() function to print each
+character till we hit a NULL. Since we wont use standard library then we need to imitate
+the function puts(S)
+
+* Initialize  the first index of the string as int i = 0;
+* Traverse through the string with while loop printing each character
+* Stop when loop reaches a NULL  or '\0';
+
+```C
+
+
+
+```
