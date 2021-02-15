@@ -371,3 +371,24 @@ void swap_int(int *a, int *b)
 }
 
 ```
+
+2. Write a function that returns the length of a string.
+
+_My Approach_
+
+**_intput:_** A string
+**_output_** Length of the string
+
+I have to unlearn python and learn c. I thinking of iterating through the string
+until i reach NULL then return the total count of iterations. I think this will work.
+
+I will implement it using while loop.
+
+* First, we initialize s_len = 0;
+* then, we iterate over s until s[i] in NULL or '\0' while increasing s_len by 1 each loop
+* s_len = will be the length of the string.
+
+```C
+
+
+```
