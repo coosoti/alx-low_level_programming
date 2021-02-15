@@ -310,7 +310,7 @@ int main(void)
 4. Look back over what you've done.
 
 #### Solutions:
-Write a function that takes a pointer to an int as parameter and updates the
+0. Write a function that takes a pointer to an int as parameter and updates the
 value it points to to 98.
 
 _My Approach_
@@ -326,5 +326,48 @@ thus,
 
 ```
 
+
+```
+
+1. Write a function that swaps the values of two integers.
+
+_My Approach_
+
+**_inputs_** pointers to ints a and b;
+**_return_** void
+**_outputs_** pointer to int a to point to int b and pointer to int b to point to int a
+
+Explanation** It wont make sence if we say *a = *b and *b = *a. Therefore we need to introduce
+another variable, say temp which will store *b before we assign it to *a. Therefore,
+
+pseudocode:
+
+* var temp will hold *b, now temp = *b; *b = *b; *a = *a;
+* *b = *a, now temp = *b; *b = *a; *a = *a;
+* *a = temp; now temp = *a; *b = *a; *a = *b;
+* Swap completed.
+
+
+```C
+#include "holberton.h"
+
+/**
+ * swap_int - func to swap the values of two ints given address
+ *
+ * @a: int params a
+ * @b: int params b
+ *
+ * Return: void
+ */
+
+void swap_int(int *a, int *b)
+{
+        int temp;
+
+        temp = *b;
+	*b = *a;
+	*a = temp;
+
+}
 
 ```
