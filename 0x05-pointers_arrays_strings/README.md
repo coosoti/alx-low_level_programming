@@ -426,7 +426,7 @@ from the last.
 
 I am gonna use while loop to get the size of the str and another while loop to print the
  characters in reverse.
- 
+
 * Initialize the last character in the string s[i] == '\0';
 * After reaching the end, print it until you reach i = 0;
 * Let's code.
@@ -435,3 +435,20 @@ I am gonna use while loop to get the size of the str and another while loop to p
 
 
 ```
+
+5. Write a function that reverses a string
+
+_My Approach_
+
+_**variables**_ introduced 3 variables; len for length of str, i for index and temp for swapping
+_**input**_ a pointer to a string
+_output_ a string in reverse
+
+* Find the length of the string
+* Swap the position of elements using loop
+
+```
+
+
+```
+
