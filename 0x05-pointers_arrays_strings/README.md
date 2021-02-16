@@ -452,3 +452,8 @@ _output_ a string in reverse
 
 ```
 
+6. Write a function that prints every other character of a string, starting with
+the first character, followed by a new line.
+
+_My Approach_
+
