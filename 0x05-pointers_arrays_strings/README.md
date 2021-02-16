@@ -442,6 +442,8 @@ _My Approach_
 
 _**variables**_ introduced 3 variables; len for length of str, i for index and temp for swapping
 _**input**_ a pointer to a string
+
+
 _output_ a string in reverse
 
 * Find the length of the string
@@ -456,4 +458,11 @@ _output_ a string in reverse
 the first character, followed by a new line.
 
 _My Approach_
+
+7. Write a function that prints half of a string, followed by a new line.
+
+* Prototype: void puts_half(char *str);
+* The function should print the second half of the string
+* If the number of characters is odd, the function should print the last n chara
+ cters of the string, where n = (length_of_the_string - 1) / 2
 
