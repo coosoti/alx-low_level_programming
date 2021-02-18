@@ -1,6 +1,5 @@
 #include "holberton.h"
 
-
 /**
  * cap_string - capitalizes all words of a string
  * @s: pointer to string
@@ -17,14 +16,14 @@ char *cap_string(char *s)
 			i++;
 
 		if (s[i - 1] == ' ' ||
-		        s[i - 1] == '\t' ||
-		        s[i - 1] == '\n' ||
+		    s[i - 1] == '\t' ||
+		    s[i - 1] == '\n' ||
 		    s[i - 1] == ',' ||
 		    s[i - 1] == ';' ||
-		        s[i - 1] == '.' ||
-		        s[i - 1] == '!' ||
-		        s[i - 1] == '?' ||
-		        s[i - 1] == '"' ||
+		    s[i - 1] == '.' ||
+		    s[i - 1] == '!' ||
+		    s[i - 1] == '?' ||
+		    s[i - 1] == '"' ||
 		    s[i - 1] == '(' ||
 		    s[i - 1] == ')' ||
 		    s[i - 1] == '{' ||
