@@ -51,5 +51,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	*(new_str + tot_len) = '\0';
 	return (new_str);
-	
 }
