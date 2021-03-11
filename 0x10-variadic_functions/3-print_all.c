@@ -6,6 +6,7 @@ void _printf(va_list f);
 void _printi(va_list i);
 void _printc(va_list c);
 void _prints(va_list s);
+void print_all(const char * const format, ...);
 
 /**
  * _printc- a function to print a char
