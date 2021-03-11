@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 
+void _printf(va_list f);
+void _printi(va_list i);
+void _printc(va_list c);
+void _prints(va_list s);
+
 /**
  * _printc- a function to print a char
  * @c: char to print
@@ -22,10 +27,16 @@ void _printc(va_list c)
 
 void _prints(va_list s)
 {
-	char *str = va_arg(s, char *);
+	char *str;
+
+	str = va_arg(s, char *);
 
 	if (str == NULL)
-		str = "(nil)";
+	{
+		printf("(nil)");
+		return;
+	}
+
 	printf("%s", str);
 }
 
