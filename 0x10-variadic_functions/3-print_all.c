@@ -76,7 +76,8 @@ void print_all(const char * const format, ...)
 		{"c", _printc},
 		{"i", _printi},
 		{"f", _printf},
-		{"s", _prints}
+		{"s", _prints},
+		{NULL, NULL}
 	};
 
 	int i, j = 0;
@@ -85,21 +86,21 @@ void print_all(const char * const format, ...)
 
 	va_start(a_list, format);
 
-	while (format && (*(format + i)))
+	while (format != NULL && format[j] != '\0')
 	{
-		j = 0;
+		i = 0;
 
-		while (j < 4 && (*(format + i) != *(types[j].type)))
-			j++;
-
-		if (j < 4)
+		while (types[i].type != NULL)
 		{
-			printf("%s", separator);
-			types[j].func(a_list);
-			separator = ", ";
+			if (format[j] == *(types[i].type))
+			{
+				printf("%s", separator);
+				(types[i].func)(a_list);
+				separator = ", ";
+			}
+			i++;
 		}
-
-		i++;
+		j++;
 	}
 	printf("\n");
 	va_end(a_list);
