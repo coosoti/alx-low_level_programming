@@ -64,8 +64,7 @@ void print_all(const char * const format, ...)
 		{"c", _printc},
 		{"i", _printi},
 		{"f", _printf},
-		{"s", _prints},
-		{NULL, NULL}
+		{"s", _prints}
 	};
 
 	int i, j = 0;
